@@ -70,14 +70,11 @@ As you can see i hooked up a serial cable to the 3 pads on the edge of the board
 
   
 
-And, BINGO! We got output! It does seem that they have redirected the kernel output and system shell because after the starting kernel message i got nothing anymore, so they likely set the console to output to /dev/null or some other non existent tty. 
-
+And, BINGO! We got output! It does seem that they have redirected the kernel output and system shell because after the starting kernel message i got nothing anymore, so they likely set the console to output to /dev/null or some other non existent tty. But we do get the information that this runs Uboot which i already guessed and it uses Linux kernel version 4.9.37 and now we know the cpu is Arm. 
 ![IMG20241207151808](https://github.com/user-attachments/assets/51962b3a-a05a-42c0-b49b-b4b1fb252576) 
 
   
-
 Aw snap, its password protected...!! 
-
 ![IMG20241207155122](https://github.com/user-attachments/assets/3b1cfe96-6ac2-41d8-bc7d-4aa71714b61c) 
 
   
@@ -89,13 +86,11 @@ Well, I guess I either have to do some research or just glitch the flash chip to
   
 
 So I decided to take off the flash chip to allow me to read it without the soc interfering so i desoldered it. 
-
 ![IMG20241207161137](https://github.com/user-attachments/assets/6b5d4c8d-f8f7-4470-8de4-38983b1a5fb8) 
 
   
 
 Plugged it into the ch341 and launched neoprogrammer and i got a full 8mb dump of the chip. Awesome! Now we can go further. I decided to resolder it to the board to restore functionality of the device cause now i got a copy of its firmware which i can mess with. I firstly ran it through Bin walk and i got a few dozens of files.  
-
 ![IMG20241207165719](https://github.com/user-attachments/assets/db1b0515-8029-4ea5-bf4f-b349ec529a77) 
 
   
