@@ -112,24 +112,16 @@ Thats quite a lot of Jffs and squashfs folders.... Although most might also just
   
 
 'squashfs-root-0'. This seems to be the folder that contains the app. It has 8 folders inside of it. a bin folder, etc folder, sbin folder, json folder, lib folder, res folder, share folder, xm-version folder. 
-
 Inside bin I can find a main custom binary called 'app' which is 6.3mb in size but thats becasue its uncompressed by binwalk. This is the star of the show and runs the camera. We also have in this bin folder other binaries. a 'wpa_suplicant' binary which is just generic for Linux and it handles the wireless lan and stuff. Then we have some more custom binaries like 'XmEnv' which i guess does some environment variable stuff. a 'XmGpio' binary which handles the gpio like buttons and the motors and other things. a 'XmWlanDaemon' binary which i guess also handles the wireless lan. Further we have some file called 'productDefinition' which i guess defines the product. And we have a folder called Squirrel which has 2 folders inside. A folder called 'ptz' which has some .nut files in it. And a folder called rs485 which also has some .nut files inside.  
-
 Then we have an 'etc' folder inside this squashfs folder which has 2 scripts inside. A script called 'loadmod' which loads some custom modules. And we have a 'loadpublic' script which loads public libraries.  
-
 We also have a 'json' folder inside this squahsfs folder which contains some json files. We also have a 'lib' folder which contains libraries and kernel modules. Than we have a ‘sbin’ folder which has a script called ‘a 
-
 AppRun.sh’ which seems quite interesting.... And we have a few other scripts. ‘media’, ‘mnt’, ‘run_loop’, ‘udhcp.script’ which i am not going to be talking about much.  
-
- We also have a ‘share’ folder which has a ‘music’ folder inside of it and this is where all the sounds are stored in .pcm format which i could play using aplay! 
+We also have a ‘share’ folder which has a ‘music’ folder inside of it and this is where all the sounds are stored in .pcm format which i could play using aplay! 
 
  
 
 Okay, finally we move on from this biiiiiig app partition. 2 Squashfs folders to go! 
-
 ‘squashfs-root-1'. This folder seems to contain some css and javascript which i think is for the ui or for a webserver. 
-
- 
 
 ‘squashfs-root-2'. This folder seems to contain some miscellaneous files and folders. We have 4 folders. ‘CustomConfig’ which has some .custom files inside of it, ‘data’ which has 3 folders inside: ‘Fonts’, ‘LVGL’, Strings. The ‘LVGL’ folder contains the UI elements that are on the display. ‘Fonts’ contains the system fonts and ‘strings’ the text. 
 
