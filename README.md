@@ -35,8 +35,13 @@ Okay lets continue now that you have a better knowledge about the hardware on bo
 As you can see i hooked up a serial cable to the 3 pads on the edge of the board which look quite suspiciously like a UART port for debugging. IF lucky they left it open and enabled, we'll see.
 ![IMG20241207154439](https://github.com/user-attachments/assets/813607c8-2dd4-4f2f-abbd-dda399ef99f8)
 
-And, BINGO! We got output!
+And, BINGO! We got output! It does seem that they have redirected the kernel output and system shell because after the starting kernel message i got nothing anymore so they likely set the console to otuput to /dev/null or some other non existant tty.
 ![IMG20241207151808](https://github.com/user-attachments/assets/51962b3a-a05a-42c0-b49b-b4b1fb252576)
+
+Aw snap, its password protected...!!
+![IMG20241207155122](https://github.com/user-attachments/assets/3b1cfe96-6ac2-41d8-bc7d-4aa71714b61c)
+
+Well, i gues i either have to do some research or just glitch the flash chip to hopefully trigger an emergency fallback mechanism to get us into a non password protected bootloader shell.
 
 
 
