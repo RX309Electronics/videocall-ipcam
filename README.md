@@ -16,3 +16,9 @@ After thats undone you find 2 screws you also have to undo
 And now its open
 ![IMG20241207145726](https://github.com/user-attachments/assets/922c42ec-83d9-4657-b949-b52952c62a6c)
 ![IMG20241207145742](https://github.com/user-attachments/assets/1f923392-02ef-4b4b-ba70-f672d2225901)
+
+Here are some inside pics.
+![IMG20241207145947](https://github.com/user-attachments/assets/2ce28c12-39ab-4d6c-817b-9347458ac302)
+![IMG20241207150015](https://github.com/user-attachments/assets/93536d5e-f6c9-4687-9b63-623c91e9c4fd)
+![IMG20241207150123](https://github.com/user-attachments/assets/ffc84c08-21dc-4077-b8da-5c65d1b95b12)
+![IMG20241207150126](https://github.com/user-attachments/assets/cdebdcce-32da-4a96-b363-3f029e385e97)
