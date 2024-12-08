@@ -1,0 +1,56 @@
+squashfsload- squashfsload  - load binary file from a squashfs image
+
+tftp      - Download image via network using TFTP protocol.
+tftpboot  - boot image via network using TFTP protocol
+tftpput   - TFTP put command, for uploading files to a server
+timestamp - Mark a time stamp
+version   - print monitor, compiler and linker version
+waitus    - wait for n us
+xmediaapp - xmediaapp
+# printenvhelp
+Unknown command 'printenvhelp' - try 'help'
+# help
+?         - alias for 'help'
+base      - print or set address offset
+bitwait   - bit compare and wait for equal
+boot      - boot default, i.e., run 'bootcmd'
+bootd     - boot default, i.e., run 'bootcmd'
+boothz    - Read and decompress image by hardware: boothz <src> <dst> <flash offset> <size> [sub command | chunk size]
+bootm     - boot application image from memory
+bootp     - boot image via network using BOOTP/TFTP protocol
+clearenv  - clear env partition.
+cmp       - memory compare
+cp        - memory copy
+crc32     - checksum calculation
+dispaddr  - display the value of 'addr'
+dispenv   - display the value of 'env_var'
+dispver   - display the uboot version
+env       - environment handling commands
+flwrite   - SPI flash sub-system
+getinfo   - print hardware information
+go        - start application at address 'addr'
+help      - print command description/usage
+loop      - infinite loop on address range
+md        - memory display
+mii       - MII utility commands
+mm        - memory modify (auto-incrementing address)
+mw        - memory write (fill)
+nfs       - boot image via network using NFS protocol
+nm        - memory modify (constant address)
+ping      - send ICMP ECHO_REQUEST to network host
+printenv  - print environment variables
+reset     - Perform RESET of the CPU
+run       - run commands in an environment variable
+saveenv   - save environment variables to persistent storage
+setenv    - set environment variables
+sf        - SPI flash sub-system
+squashfsload- squashfsload  - load binary file from a squashfs image
+
+tftp      - Download image via network using TFTP protocol.
+tftpboot  - boot image via network using TFTP protocol
+tftpput   - TFTP put command, for uploading files to a server
+timestamp - Mark a time stamp
+version   - print monitor, compiler and linker version
+waitus    - wait for n us
+xmediaapp - xmediaapp
+

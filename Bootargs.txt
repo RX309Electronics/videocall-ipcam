@@ -1,0 +1,2 @@
+bootargs=init=linuxrc mem=${osmem} console=ttyAMA0,115200 root=/dev/mtdblock1 rootfstype=squashfs mtdparts=sfc:0x40000(boot),0x2E0000(romfs),0x440000(usr),0x20000(web),0x30000(custom),0x50000(mtd)
+

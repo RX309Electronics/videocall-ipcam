@@ -1,0 +1,2 @@
+bootcmd=setenv setargs setenv bootargs ${bootargs};run setargs;run loadromfs
+
