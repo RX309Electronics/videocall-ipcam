@@ -123,7 +123,9 @@ Okay, finally we move on from this biiiiiig app partition. 2 Squashfs folders to
 
 These are all the important squashfs folders that binwalk managed to extract. In this extracted directory with all the folders we also have a Uboot.bin file which i think is the bootloader. Now i can inspect this file in a hex editor and maybe find some password strings. 
 
-Well, i gave up on digging through the binary after 2 hours and decided to do some research, and what seems? They all use the same Uboot password and thanks to this issue on github i got the password: https://github.com/OpenIPC/firmware/issues/1494. And after typing it in: Bingo! We got into the shell and now have bootloader access! I uploaded a file that has every environmental variable inside of it and i provided a file for the original bootargs and original bootcmd so if you softbrick it but the bootloader is still working you can reset the variable. 
+Well, i gave up on digging through the binary after 2 hours and decided to do some research, and what seems? They all use the same Uboot password and thanks to this issue on github i got the password: https://github.com/OpenIPC/firmware/issues/1494. And after typing it in: Bingo! We got into the shell and now have bootloader access! I put delivered the password in a file called 'Uboot-password.txt'. I also provided 'Uboot-commands' which has all Uboot commands inside of it that are supported. And the original bootargs and bootcmd for if you brick the camera.
+
+
 
   
 
