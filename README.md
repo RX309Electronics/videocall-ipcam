@@ -74,11 +74,10 @@ And, BINGO! We got output! It does seem that they have redirected the kernel out
 ![IMG20241207151808](https://github.com/user-attachments/assets/51962b3a-a05a-42c0-b49b-b4b1fb252576) 
 
   
-Aw snap, its password protected...!! 
+Aw snap, I cant get into the bootloader shell because its password protected...!! 
 ![IMG20241207155122](https://github.com/user-attachments/assets/3b1cfe96-6ac2-41d8-bc7d-4aa71714b61c) 
 
   
-
 Well, I guess I either have to do some research or just glitch the flash chip to hopefully trigger an emergency fallback mechanism to get us into a non password protected bootloader shell. 
 
   
@@ -102,11 +101,11 @@ Thats quite a lot of Jffs and squashfs folders.... Although most might also just
 
   
 
-'Squashfs-root'. This is the main squashfs filesystem and is just your generic Linux filesystem with /bin /dev /etc /sbin /root /proc /sys and so on. 
+'Squashfs-root'. This is the main squashfs filesystem and is just your generic Linux filesystem with /bin /dev /etc /sbin /root /proc /sys and so on. This folder also contains a 'uImage' file which is the kernel and its located in '/boot'. This is our Arm Linux kernel Image. 
 
   
 
-'squashfs-root-0'. This seems to be the folder that contains the app. It has 8 folders inside of it. a bin folder, etc folder, sbin folder, json folder, lib folder, res folder, share folder, xm-version folder. 
+'squashfs-root-0'. This seems to be the folder that contains the app. It has 8 folders inside of it. A bin folder, etc folder, sbin folder, json folder, lib folder, res folder, share folder, xm-version folder. 
 Inside bin I can find a main custom binary called 'app' which is 6.3mb in size but thats becasue its uncompressed by binwalk. This is the star of the show and runs the camera. We also have in this bin folder other binaries. a 'wpa_suplicant' binary which is just generic for Linux and it handles the wireless lan and stuff. Then we have some more custom binaries like 'XmEnv' which i guess does some environment variable stuff. a 'XmGpio' binary which handles the gpio like buttons and the motors and other things. a 'XmWlanDaemon' binary which i guess also handles the wireless lan. Further we have some file called 'productDefinition' which i guess defines the product. And we have a folder called Squirrel which has 2 folders inside. A folder called 'ptz' which has some .nut files in it. And a folder called rs485 which also has some .nut files inside.  
 Then we have an 'etc' folder inside this squashfs folder which has 2 scripts inside. A script called 'loadmod' which loads some custom modules. And we have a 'loadpublic' script which loads public libraries.  
 We also have a 'json' folder inside this squahsfs folder which contains some json files. We also have a 'lib' folder which contains libraries and kernel modules. Than we have a ‘sbin’ folder which has a script called ‘a 
