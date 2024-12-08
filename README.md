@@ -1,15 +1,15 @@
+DISCLAIMER: The creator: RX309Electronics, the uploader and maintainer of this subreddit is not responsible for any damage or harm caused to/by the product. If you brick or damage your device dont ask me about a refund or to pay for the damages. I uploaded this because i was interested in the product and my main target was hacking the device and if you also want to dive deeper into this feel free to follow my instructions. But be warned because i am just a hobbyist tinkerer and not a profesional in this sector. This is just for fun and learning things in the process. 
+If you are the manufacturer or a lawyer of the manufacturer of this product and wish for this repository to be removed, feel free to email me at 309Electronics_customersupport@gmail.com and i will happily cooperate because i dont like breaking laws/patents or getting in trouble. If you mail me respectfully i will coperate as soon as possible.
+PLEASE NOTE that this product uses Gpl software components like: A Linux kernel, version 4.9.37 to be exact. Uboot, which is an opensource Universal bootloader for embedded devices. Busybox, a swiss army knife with a lot of handy Unix utilities and tools and a few other things. Read the License if you need any more info about this Gnu GPL law and license. 
+
+
+With that out of the way, lets move on!
 Sooooo, i bought a new product from AliExpress. This product is a videocall ip camera and has a built-in display which makes it even more interesting. I saw it on sale for only 15 euros so i bought it immediately. It arrived pretty quickly in just 8 days! 
-
 This is the product. 
-
 ![IMG20241207145552](https://github.com/user-attachments/assets/f4c826eb-b537-44ae-9c53-06d55671d8cf) 
-
 ![IMG20241207145545](https://github.com/user-attachments/assets/88233d62-d0c9-409a-8efc-539c1fa33dba) 
-
 ![IMG20241207145549](https://github.com/user-attachments/assets/0afc4b3e-8bf8-4da4-bc9b-35f6d8063038) 
-
-  
-
+ 
   
 
 Now lets open it up! 
